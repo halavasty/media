@@ -3,7 +3,8 @@ import "./Logo.css";
 export const Logo = () => {
   return (
     <div className="Logo">
-      <header>LOGO</header>
+      MedeaLogo
+      <p className="LogoText"> Medea® </p>
     </div>
   );
 };

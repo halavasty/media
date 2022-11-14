@@ -1,3 +1,11 @@
 .Logo{
-    background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.LogoText{
+    color: #B4FE17;
+    font-size: 38px;
+    font-weight: 700;
 }
