@@ -1,7 +1,19 @@
 .Search{
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     margin-top: 15px;
-    color: #6B7280;
+}
+
+.Search_Box{
+    border: none;
+    background: none;
+    width: 50%;
+    color: white;
+    min-width: 205px;
+}
+
+
+.SearchLogo{
+    margin-right: 20px;
 }

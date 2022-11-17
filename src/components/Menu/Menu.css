@@ -1,8 +1,15 @@
 .Menu {
   border-right: 1.33px solid #E5E7EB;
   background-color: #252526;
-  height: 100vh;
-  width: 34vh;
+  min-height: 100vh;
+  width: 325px;
+  min-width: 34vh;
+  
 }
 .Menu-List {
+}
+
+.WelcomeText{
+  margin-top: 60vh;
+  color: #6B7280;
 }

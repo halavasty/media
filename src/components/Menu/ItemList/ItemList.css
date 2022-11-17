@@ -5,10 +5,20 @@
     justify-content: center;
 }
 
+.YLBLogo{
+    
+}
+
 .ItemListBr{
     margin-top: 20px;
     width: 25vh;
     border-bottom: 1.33px solid #373737;
+}
+
+.listText{
+    font-weight: 500;
+    font-size: 18px;
+    
 }
 
 .btn_Active{
@@ -16,6 +26,6 @@
     color: #ADFF00;
 }
 
-.listText{
-    font-weight: 500;
+.btn_unActive{
+    color: #6B7280;
 }

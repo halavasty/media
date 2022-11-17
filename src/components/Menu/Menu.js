@@ -12,6 +12,8 @@ export const Menu = () => {
         <ItemList />
       </nav>
 
+      <p className="WelcomeText listText"> Welcome To Medea! </p>
+      
     </div>
   );
 };

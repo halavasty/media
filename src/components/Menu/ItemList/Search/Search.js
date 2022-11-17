@@ -1,10 +1,18 @@
 import "./Search.css";
+import React from "react";
+import { ReactComponent as SearchLogo } from './search.svg';
+
 
 export const Search = () => {
+
+ function getSearch(e){
+  console.log(e.target.value);
+ }
+
   return (
       <div className="Search">
-        searchIcon
-        <p className="Search_Text listText"> Search </p>
+        <SearchLogo className="SearchLogo" />
+        <input onChange={getSearch} type="text" className="Search_Box listText" placeholder="Search"/>
       </div>
   );
 };
