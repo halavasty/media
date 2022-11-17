@@ -1,4 +1,4 @@
-import "./YourLibraryBtn.css";
+import "./YourLibraryBtn.scss";
 import { ReactComponent as YLB } from './YLB.svg';
 
 export const YourLibraryBtn = () => {

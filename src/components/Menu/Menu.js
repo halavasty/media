@@ -1,4 +1,4 @@
-import "./Menu.css";
+import "./Menu.scss";
 import { Logo } from "../Menu/Logo";
 import { ItemList } from "../Menu/ItemList";
 

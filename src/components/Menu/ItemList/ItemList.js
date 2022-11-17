@@ -1,4 +1,4 @@
-import "./ItemList.css";
+import "./ItemList.scss";
 import { Search } from "../ItemList/Search";
 import { YourLibraryBtn } from "./YourLibraryBtn";
 
