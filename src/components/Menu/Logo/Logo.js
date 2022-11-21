@@ -5,7 +5,7 @@ export const Logo = () => {
   return (
     <div className="Logo">
       <MyLogo />
-      <p className="LogoText"> Medea® </p>
+      <p className="Logo-Text">Medea<sup>®</sup></p>
     </div>
   );
 };

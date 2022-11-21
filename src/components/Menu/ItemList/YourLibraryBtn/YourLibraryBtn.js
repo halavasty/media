@@ -1,18 +1,24 @@
 import "./YourLibraryBtn.scss";
 import { ReactComponent as YLB } from './YLB.svg';
+import React, { useState } from 'react';
 
 export const YourLibraryBtn = () => {
 
-  function clickFunc(e){
-    e.target.className = 'ListBtn btn_Active';
-    // e.target.className = ' btn_unActive';
+  const [isActive, setIsActive] = useState(true);
+  function clickFunc() {
+    setIsActive(!isActive);
     console.log("Your Library");
   }
-
+  
   return (
-    <div className="ListBtn btn_unActive" onClick={clickFunc}>
-       <YLB className="YLBLogo"/>
-       <p className="YourLibraryBtn_Text listText">Your Library</p>
+    <div
+      className={`List-Btn ${isActive ? "btn-Active" : "btn-unActive"}`}
+      onClick={clickFunc}
+    >
+      <YLB className="YLBLogo" />
+      <p className="YourLibraryBtn-Text listText">Your Library</p>
     </div>
   );
 };
+
+

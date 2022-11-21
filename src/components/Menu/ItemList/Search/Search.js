@@ -11,8 +11,8 @@ export const Search = () => {
 
   return (
       <div className="Search">
-        <SearchLogo className="SearchLogo" />
-        <input onChange={getSearch} type="text" className="Search_Box listText" placeholder="Search"/>
+        <SearchLogo className="Search-Logo" />
+        <input onChange={getSearch} type="text" className="Search-Box listText" placeholder="Search"/>
       </div>
   );
 };

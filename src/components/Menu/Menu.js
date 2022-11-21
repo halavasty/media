@@ -12,7 +12,7 @@ export const Menu = () => {
         <ItemList />
       </nav>
 
-      <p className="WelcomeText listText"> Welcome To Medea! </p>
+      <p className="Menu-WelcomeText listText"> Welcome To Medea! </p>
       
     </div>
   );
