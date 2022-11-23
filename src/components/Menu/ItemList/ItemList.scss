@@ -1,0 +1,27 @@
+.ItemList{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &-Br{
+        margin-top: 20px;
+        width: 25vh;
+        border-bottom: 1.33px solid #373737;
+    }
+}
+
+.listText{
+    font-weight: 500;
+    font-size: 18px;
+    
+}
+
+.btn-Active{
+    background-color: #39393B;
+    color: #ADFF00;
+}
+
+.btn-unActive{
+    color: #6B7280;
+}

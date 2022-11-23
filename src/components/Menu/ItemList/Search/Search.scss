@@ -1,0 +1,17 @@
+.Search{
+    display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 15px;
+      
+      &-Box {
+         border: none;
+         background: none;
+         width: 50%;
+         color: white;
+         min-width: 205px;
+      }
+      &-Logo{
+          margin-right: 20px;
+      }
+  }

@@ -1,4 +1,4 @@
-import "./Home.css";
+import "./Home.scss";
 import { Header } from "../../components/Header";
 import { Menu } from "../../components/Menu";
 

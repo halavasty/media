@@ -1,10 +1,19 @@
-import "./Menu.css";
+import "./Menu.scss";
+import { Logo } from "../Menu/Logo";
+import { ItemList } from "../Menu/ItemList";
 
 export const Menu = () => {
   return (
     <div className="Menu">
-      <header>Menu</header>
-      <nav className="Menu-List"></nav>
+
+      <Logo />
+
+      <nav className="Menu-List">
+        <ItemList />
+      </nav>
+
+      <p className="Menu-WelcomeText listText"> Welcome To Medea! </p>
+      
     </div>
   );
 };
