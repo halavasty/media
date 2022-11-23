@@ -5,8 +5,8 @@ import { Menu } from "../../components/Menu";
 export const Home = () => {
   return (
     <div className="Home">
-      <Header />
       <Menu />
+      <Header />
     </div>
   );
 };

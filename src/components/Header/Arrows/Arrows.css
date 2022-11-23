@@ -1,0 +1,94 @@
+.Arrows-Inner {
+    display: flex;
+    justify-content: space-between;
+    min-width: 111.7px;
+}
+
+.Arrow-Left, .Arrow-Right {
+    display: inline-block;
+    width: 42.67px;
+    height: 42.67px;
+    background-color: var(--white);
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    border: none;
+    transition: 0.2s;
+}
+
+.Arrow-Left::before {
+    content: '';
+    display: block;
+    width: 15px;
+    height: 2.56px;
+    background-color: var(--gray);
+    border-radius: 2px;
+    top: 47%;
+    left: 16%;
+    bottom: 0;
+    z-index: 3;
+    transform: rotate(135deg) translate3d(-48%, -50%, 0);
+    position: absolute;
+    
+}
+
+.Arrow-Left::after {
+    content: '';
+    display: block;
+    width: 15.5px;
+    height: 2.56px;
+    background-color: var(--gray);
+    border-radius: 2px;
+    top: 45.5%;
+    left: 19%;
+    bottom: 0;
+    z-index: 3;
+    transform: rotate(-135deg) translate3d(-46.5%, -51%, 0);
+    position: absolute;
+}
+
+
+.Arrow-Left:hover, .Arrow-Right:hover {
+    background-color: var(--green);
+}
+
+
+
+.Arrow-Right::before {
+    content: '';
+    display: block;
+    width: 15px;
+    height: 2.56px;
+    background-color: var(--gray);
+    border-radius: 2px;
+    top: 50%;
+    left: 47%;
+    bottom: 0;
+    z-index: 3;
+    transform: rotate(45deg) translate3d(-48%, -50%, 0);
+    position: absolute;
+    
+}
+
+.Arrow-Right::after {
+    content: '';
+    display: block;
+    width: 15.5px;
+    height: 2.56px;
+    background-color: var(--gray);
+    border-radius: 2px;
+    top: 48.5%;
+    left: 50%;
+    bottom: 0;
+    z-index: 3;
+    transform: rotate(-45deg) translate3d(-46.5%, -51%, 0);
+    position: absolute;
+}
+
+.Disable {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+
+

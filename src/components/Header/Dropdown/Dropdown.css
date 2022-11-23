@@ -1,0 +1,61 @@
+.Dropdown-Inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 225px;
+  position: absolute;
+  right: 0;
+  top: 10%;
+  right: 0.5%;
+}
+
+.Dropdown-Button {
+  font-family: 'Inter';
+  background-color: inherit;
+  border: 0;
+}
+
+.Dropdown-Button.active .Settings-Icon {
+  fill: var(--green);
+  cursor: pointer;
+  stroke: var(--green);
+}
+
+.Dropdown-Button.active {
+  align-self: flex-end;
+}
+
+.Drop-Menu-Item {
+  margin-bottom: 5px;
+}
+
+.Dropdown-Menu {
+  margin: 5px 0 5px 0;
+  padding: 0;
+}
+
+.Drop-Button {
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 14px;
+  background-color: var(--gray);
+  width: 100%;
+  color: var(--green);
+  border: 0;
+  padding: 10px 0;
+  border-radius: 10px;
+  transition: 0.2s;
+  cursor: pointer;
+  min-width: 130px;
+}
+
+.Drop-Button:hover {
+  opacity: 0.7;
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-weight: 500;
+  font-style: normal;
+  src: url(/src/helpers/assets/fonts/Inter-Regular.woff2);
+}
