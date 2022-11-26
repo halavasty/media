@@ -1,0 +1,17 @@
+.Footer {
+    min-height: 117.33px;
+    max-height: 200px;
+    width: 100%;
+    padding: 21.33px;
+    background-color: var(--black);
+    border-top: 1.33px solid var(--green);
+    position: absolute;
+    bottom: 0;
+    color: var(--white);
+}
+
+.Footer__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
