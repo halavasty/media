@@ -6,6 +6,8 @@
 
 }
 
+$Footer-height: calc(100vh - 120px);
+
 *::before,
 *::after {
   box-sizing: border-box;
