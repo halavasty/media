@@ -1,17 +1,3 @@
-:root {
-  --gray: #727780;
-  --green: #adff00;
-}
-
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-* {
-  box-sizing: border-box;
-}
-
 .Settings-Icon {
   width: 36px;
   height: 36px;

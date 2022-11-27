@@ -1,5 +1,12 @@
 .Home {
   display: grid;
   background-color: var(--black);
-  grid-template-columns: 0.8fr 3fr;
+  position: relative;
+  overflow: hidden;
+  min-height: 450px;
+  grid-template-columns: 0.8fr 3fr 3fr;
+  grid-template-areas:
+    'menu header header header'
+    'menu header header header' 
+    'footer footer footer footer';
 }

@@ -1,16 +1,20 @@
+@import "/src/index.scss";
+
 .Menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   border-right: 1.33px solid #E5E7EB;
   background-color: #252526;
-  min-height: 100vh;
   width: 325px;
   min-width: 34vh;
-  
+  position: relative;
+  grid-area: menu;  
   &-List {
     
   }
   
   &-WelcomeText{
-    margin-top: 60vh;
     color: #6B7280;
   }
 }
