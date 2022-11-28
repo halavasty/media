@@ -1,0 +1,16 @@
+.Footer {
+    height: 120px;
+    width: 100%;
+    padding: 21.33px;
+    background-color: var(--black);
+    border-top: 1.33px solid var(--green);
+    color: var(--white);
+    z-index: 100;
+    grid-area: footer;
+}
+
+.Footer__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
