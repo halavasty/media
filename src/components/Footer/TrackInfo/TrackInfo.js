@@ -1,6 +1,7 @@
 import "./TrackInfo.scss";
 import { TrackInfoImage } from "./TrackInfoImage";
 import Summer from './Summer.png'
+import { TrackInfoText } from "./TrackInfoText";
 
 export const TrackInfo = (...props) => {
     
@@ -8,7 +9,7 @@ export const TrackInfo = (...props) => {
     
       <div className="TrackInfo">
           <TrackInfoImage image={Summer} />
-          <div {...props} className="Element1">Element1</div>
+          <TrackInfoText text={"Тест Текст"} name={"Тест Имя"} />
       </div>
 
   );

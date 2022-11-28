@@ -1,0 +1,37 @@
+
+.TrackInfoText-inner {
+    text-align: left;
+}
+
+.TrackInfoText-text {
+    font-size: 18.67px;
+    margin-left: 16px;
+    line-height: 26.67px;
+    font-family: 'Inter';
+    font-weight: 550;
+    color: var(--white);
+    
+}
+
+.TrackInfoText-name {
+    font-size: 16px;
+    margin-left: 16px;
+    line-height: 21.33px;
+    font-family: 'Inter';
+    font-weight: 500;
+    color: var(--lightgray);
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-weight: 500;
+    font-style: normal;
+    src: url(/src/helpers/assets/fonts/Inter-Regular.woff2);
+  }
+
+  @font-face {
+    font-family: 'Inter';
+    font-weight: 550;
+    font-style: medium;
+    src: url(/src/helpers/assets/fonts/Inter-Medium.woff2);
+  }

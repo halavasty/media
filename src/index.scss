@@ -3,6 +3,7 @@
   --gray: #39393b;
   --green: #b4fe17;
   --white: #fff;
+  --lightgray: #6B7280;
 
 }
 
@@ -15,6 +16,11 @@ $Footer-height: calc(100vh - 120px);
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
 }
 
 
