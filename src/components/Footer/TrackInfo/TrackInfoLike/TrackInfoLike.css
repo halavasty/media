@@ -1,0 +1,11 @@
+.TrackInfoLike {
+    border: 0;
+    background: none;
+    margin:  3.5% 18.66px 0 18.66px;
+    padding: 0;
+}
+
+.TrackInfoLike.active .Like-Icon {
+    fill: var(--green);
+    stroke: var(--green);
+}
