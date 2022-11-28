@@ -8,9 +8,7 @@ export const Menu = () => {
 
       <Logo />
 
-      <nav className="Menu-List">
-        <ItemList />
-      </nav>
+      <ItemList />
 
       <p className="Menu-WelcomeText listText"> Welcome To Medea! </p>
       
