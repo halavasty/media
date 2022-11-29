@@ -8,8 +8,12 @@ export const Home = () => {
   return (
     <div className="Home">
       <Menu />
-      <Header />
-      <Play />
+      
+      <div className="WrapperPH">
+        <Header />     
+        <Play /> 
+       </div>
+
       <Footer />
     </div>
   );

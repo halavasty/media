@@ -12,3 +12,11 @@
     'menu play play play' 
     'footer footer footer footer';
 }
+
+.WrapperPH{
+  height: calc(100vh - 120px);
+  overflow: scroll;
+  width: auto;
+  grid-area: play;
+
+}
