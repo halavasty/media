@@ -1,18 +1,17 @@
 import "./TrackInfo.scss";
 import { TrackInfoImage } from "./TrackInfoImage";
-import Summer from "./Summer.png";
 import { TrackInfoText } from "./TrackInfoText";
 import { TrackInfoLike } from "./TrackInfoLike";
 
-export const TrackInfo = (...props) => {
+export const TrackInfo = (props) => {
   const likeData = (likeInfo) => {
-    console.log(likeInfo);
+    props.func(likeInfo);
   };
 
   return (
     <div className="TrackInfo">
-      <TrackInfoImage image={Summer} />
-      <TrackInfoText text={"Тест Текст"} name={"Тест Имя"} />
+      <TrackInfoImage image={props.image} />
+      <TrackInfoText text={props.text} name={props.name} />
       <TrackInfoLike func={likeData} />
     </div>
   );
