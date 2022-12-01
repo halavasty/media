@@ -5,14 +5,14 @@ import { TrackInfoLike } from "./TrackInfoLike";
 
 export const TrackInfo = (props) => {
   const likeData = (likeInfo) => {
-    props.func(likeInfo);
+    props.likeData(likeInfo);
   };
 
   return (
     <div className="TrackInfo">
       <TrackInfoImage image={props.image} />
       <TrackInfoText text={props.text} name={props.name} />
-      <TrackInfoLike func={likeData} />
+      <TrackInfoLike likeData={likeData} />
     </div>
   );
 };

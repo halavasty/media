@@ -1,12 +1,12 @@
 import "./TrackInfoText.css";
 
- export const TrackInfoText = (props) => {
+ export const TrackInfoText = ({text = "Test text", name = "Name"}) => {
 
     return (
     
       <div className="TrackInfoText-inner">
-        <h2 className="TrackInfoText-text"> {props.text || "In My Fillings"}</h2>
-        <h3 className="TrackInfoText-name"> {props.name || "Drake"}</h3>
+        <h2 className="TrackInfoText-text"> {text}</h2>
+        <h3 className="TrackInfoText-name"> {name}</h3>
       </div>
 
   );

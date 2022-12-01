@@ -26,12 +26,14 @@
     font-family: 'Inter';
     font-weight: 500;
     font-style: normal;
-    src: url(/src/helpers/assets/fonts/Inter-Regular.woff2);
+    src: url(/src/helpers/assets/fonts/Inter-Regular.woff2),
+        url(/src/helpers/assets/fonts/Inter-Regular.woff);
   }
 
   @font-face {
     font-family: 'Inter';
     font-weight: 550;
     font-style: medium;
-    src: url(/src/helpers/assets/fonts/Inter-Medium.woff2);
+    src: url(/src/helpers/assets/fonts/Inter-Medium.woff2),
+         url(/src/helpers/assets/fonts/Inter-Medium.woff);
   }

@@ -2,15 +2,15 @@ import "./TrackInfoLike.css";
 import { LikeIcon } from "./TrackInfoLikeIcon";
 import { useState } from "react";
 
-export const TrackInfoLike = (props) => {
+export const TrackInfoLike = ({likeData}) => {
   const [isActive, setActive] = useState(false);
 
   const likeActive = () => {
     setActive(!isActive);
     if (!isActive) {
-      props.func("Liked");
+      likeData("Liked");
     } else {
-      props.func("Disliked");
+      likeData("Disliked");
     }
   };
 

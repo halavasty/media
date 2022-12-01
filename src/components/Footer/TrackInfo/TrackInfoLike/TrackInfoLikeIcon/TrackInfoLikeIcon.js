@@ -1,6 +1,6 @@
 import "./TrackInfoLikeIcon.css";
 
-export const LikeIcon = (props) => {
+export const LikeIcon = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
