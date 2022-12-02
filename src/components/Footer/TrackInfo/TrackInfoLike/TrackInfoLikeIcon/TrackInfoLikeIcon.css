@@ -1,0 +1,10 @@
+.Like-Icon {
+    width: 20px;
+    height: 16.66px;
+  }
+  
+  .Like-Icon:hover {
+    fill: var(--green);
+    stroke: var(--green);
+  }
+
