@@ -4,7 +4,7 @@ import { ReactComponent as MyLogo } from './logo.svg';
 export const Logo = () => {
   return (
     <div className="Logo">
-      <MyLogo />
+      <div className="Logo-circle"><MyLogo /></div>
       <p className="Logo-Text">Medea<sup>®</sup></p>
     </div>
   );
