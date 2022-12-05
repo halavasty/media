@@ -1,0 +1,9 @@
+.MixButton-Icon {
+    width: 19px;
+    height: 17.22px;
+  }
+  
+.MixButton-Icon:hover {
+    fill: var(--green);
+    stroke: var(--green);
+  }
