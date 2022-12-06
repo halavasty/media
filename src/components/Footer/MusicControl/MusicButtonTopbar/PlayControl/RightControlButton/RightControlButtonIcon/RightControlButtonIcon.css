@@ -1,0 +1,8 @@
+.RightControlButton-Icon {
+    width: 19px;
+    height: 17.22px;
+  }
+  
+.RightControlButton-Icon:hover {
+    stroke: var(--green);
+  }
