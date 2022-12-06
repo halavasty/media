@@ -1,0 +1,20 @@
+.PlayButton {
+    font-size: 0;
+    background: var(--middlegray);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.PlayButton::after {
+    content: '';
+    width: 10px;
+    height: 10px; 
+    border-style: solid;
+    border-width: 15px; /* размер и форма */ 
+    border-color: var(--black) transparent transparent var(--black);  /* red — цвет */
+    border-radius: 10px; 
+}
