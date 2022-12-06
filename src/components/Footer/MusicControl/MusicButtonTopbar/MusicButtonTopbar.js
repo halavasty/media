@@ -1,15 +1,13 @@
 import "./MusicButtonTopbar.scss";
 import { MixButton } from "./MixButton";
+import { RepeatButton } from './RepeatButton'
 
-export const MusicButtonTopbar = (props) => {
-  
-  const MixData = (mixInfo) => {
-    console.log(mixInfo);
-  };
-  
+export const MusicButtonTopbar = (...props) => {
+    
     return (
       <div className="MusicButtonTopBar">
-        <MixButton MixData={MixData} />
+        <MixButton />
+        <RepeatButton />
       </div>
   );
 };

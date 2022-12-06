@@ -2,16 +2,16 @@ import "./MixButton.css";
 import { MixButtonIcon } from "./MixButtonIcon"
 import { useState } from "react";
 
-export const MixButton = ({MixData}) => {
+export const MixButton = () => {
   
     const [isActive, setActive] = useState(false);
 
     const toggleActive = () => {
         setActive(!isActive);
         if (!isActive) {
-            MixData("Mix-activated");
+            console.log("Mix-activated");
           } else {
-            MixData("Mix-disactivated");
+            console.log("Mix-disactivated");
           }
     }
     
