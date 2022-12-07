@@ -1,3 +1,6 @@
 .PlayControl {
     display: flex;
+    min-width: 140px;
+    justify-content: space-between;
+    position: relative;
 }
