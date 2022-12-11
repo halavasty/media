@@ -1,10 +1,11 @@
 import "./MusicControl.scss";
-import { MusicButtonTopbar } from "./MusicButtonTopbar";
+import { MusicButtons } from "./MusicButtons";
 
-export const MusicControl = () => {
-    return (
+export const MusicControl = (props) => {
+    
+  return (
       <div className="MusicControl">
-        <MusicButtonTopbar />
+        <MusicButtons src={props.src} />
       </div>
   );
 };
