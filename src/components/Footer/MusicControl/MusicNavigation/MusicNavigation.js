@@ -1,9 +1,9 @@
-import "./MusicButtons.scss";
+import "./MusicNavigation.scss";
 import { MixButton } from "./MixButton";
 import { RepeatButton } from './RepeatButton'
 import { PlayControl } from "./PlayControl";
 
-export const MusicButtons = (props) => {
+export const MusicNavigation = (props) => {
     
   const MusicData = (MusicInfo) => {
     
@@ -18,7 +18,7 @@ export const MusicButtons = (props) => {
   };
 
     return (
-      <div className="MusicButtons">
+      <div className="MusicNavigation">
         <MixButton />
         <PlayControl MusicData={MusicData} />
         <RepeatButton />
