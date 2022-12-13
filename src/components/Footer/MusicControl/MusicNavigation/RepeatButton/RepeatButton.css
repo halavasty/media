@@ -2,6 +2,7 @@
     background: none;
     border: none;
     cursor: pointer;
+    margin-left: 42px;
 }
 
 .RepeatButton.active .RepeatButton-Icon {

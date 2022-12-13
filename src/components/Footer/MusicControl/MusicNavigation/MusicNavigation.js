@@ -2,6 +2,7 @@ import "./MusicNavigation.scss";
 import { MixButton } from "./MixButton";
 import { RepeatButton } from './RepeatButton'
 import { PlayControl } from "./PlayControl";
+import { TrackRewind } from "./TrackRewind";
 
 export const MusicNavigation = (props) => {
     
@@ -19,12 +20,17 @@ export const MusicNavigation = (props) => {
 
     return (
       <div className="MusicNavigation">
+        <div className="MusicNavigation-buttons">
         <MixButton />
         <PlayControl MusicData={MusicData} />
         <RepeatButton />
+        </div>
+        <div className="MusicNavigation-rewind">
+        <TrackRewind />
+        </div>
         
         <audio id="audio">
-        <source src={props.src} type="audio/mp3"></source>
+        <source src={props.src} type={props.type}></source>
         </audio>
       </div>
   );
