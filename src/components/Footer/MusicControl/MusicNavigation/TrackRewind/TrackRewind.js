@@ -1,21 +1,16 @@
 import "./TrackRewind.css";
 import { TrackTime } from "./TrackTime";
-import { useState } from "react";
 
-export const TrackRewind = (props) => {
+
+export const TrackRewind = ({timeUpdate}) => {
   
-  const [musicTime, setMusicTime] = useState('3:24')
-
-    const changeMusicTime = (e) => {
-        setMusicTime(e.target.value);
-    }
-
+  
     return (
       <div className="TrackRewind-container">
-        <TrackTime musicTime={musicTime} />
-        <input className="TrackRewind" type="range" min="0" max="300" name="range" value='200' step="1" onChange={changeMusicTime}>
+        <TrackTime musicTime={timeUpdate} />
+        <input className="TrackRewind" type="range" min="0" max="300" name="range" value={timeUpdate} step="1">
         </input>
-        <TrackTime musicTime={musicTime} />
+      
       </div>
   );
 };

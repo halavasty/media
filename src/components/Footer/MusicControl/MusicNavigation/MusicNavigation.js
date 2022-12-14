@@ -3,6 +3,7 @@ import { MixButton } from "./MixButton";
 import { RepeatButton } from './RepeatButton'
 import { PlayControl } from "./PlayControl";
 import { TrackRewind } from "./TrackRewind";
+import { useState } from "react";
 
 export const MusicNavigation = (props) => {
     
@@ -18,6 +19,12 @@ export const MusicNavigation = (props) => {
     }
   };
 
+  const [timeUpdate, setTimeUpdate] = useState('3.44')
+
+    const changeTime = (e) => {
+        setTimeUpdate((e.target.currentTime));
+    }
+
     return (
       <div className="MusicNavigation">
         <div className="MusicNavigation-buttons">
@@ -26,11 +33,12 @@ export const MusicNavigation = (props) => {
         <RepeatButton />
         </div>
         <div className="MusicNavigation-rewind">
-        <TrackRewind />
+        <TrackRewind timeUpdate={timeUpdate} />
         </div>
         
-        <audio id="audio">
+        <audio id="audio" onTimeUpdate={changeTime}>
         <source src={props.src} type={props.type}></source>
+        
         </audio>
       </div>
   );
