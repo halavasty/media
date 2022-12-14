@@ -15,7 +15,7 @@ export const Footer = (props) => {
     <footer className="Footer">
       <div className="Footer__inner">
            <TrackInfo image={Summer} text={"Test Track"} name={"Medea"} likeData={likeData} />
-           <MusicControl src={MusicSrc} />
+           <MusicControl src={MusicSrc} type="audio/mp3" />
            <div {...props} className="Element3">Element3</div>
       </div>
     </footer>

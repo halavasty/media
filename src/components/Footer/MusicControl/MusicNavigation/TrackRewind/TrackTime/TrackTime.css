@@ -1,0 +1,15 @@
+.TrackTime {
+    margin: 0 10px;
+    color: var(--lightgray);
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-style: normal;
+    src: url(/src/helpers/assets/fonts/Inter-Regular.woff2);
+  }

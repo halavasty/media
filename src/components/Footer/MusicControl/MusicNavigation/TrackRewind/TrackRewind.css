@@ -1,3 +1,9 @@
+.TrackRewind-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .TrackRewind {
     -webkit-appearance: none;
     appearance: none;

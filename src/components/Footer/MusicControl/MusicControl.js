@@ -5,7 +5,7 @@ export const MusicControl = (props) => {
     
   return (
       <div className="MusicControl">
-        <MusicNavigation src={props.src} />
+        <MusicNavigation src={props.src} type={props.type} />
       </div>
   );
 };
