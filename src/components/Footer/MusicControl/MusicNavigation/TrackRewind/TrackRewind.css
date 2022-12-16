@@ -15,6 +15,12 @@
     overflow: hidden
 }
 
+.TrackRewind:hover {
+    cursor: pointer;
+}
+
+
+
 .TrackRewind::-webkit-slider-thumb {
     -webkit-appearance: none;
     width:15px;
@@ -31,3 +37,12 @@
     box-shadow: -13px 0 var(--green), -26px 0 var(--green), -39px 0 var(--green), -52px 0 var(--green), -65px 0 var(--green), -78px 0 var(--green), -91px 0 var(--green), -104px 0 var(--green), -117px 0 var(--green), -130px 0 var(--green), -143px 0 var(--green), -156px 0 var(--green), -169px 0 var(--green), -169px 0 var(--green), -182px 0 var(--green), -196px 0 var(--green), -209px 0 var(--green), -222px 0 var(--green), -235px 0 var(--green), -248px 0 var(--green), -261px 0 var(--green), -274px 0 var(--green), -287px 0 var(--green), -300px 0 var(--green), -313px 0 var(--green), -326px 0 var(--green), -339px 0 var(--green), -352px 0 var(--green), -365px 0 var(--green), -378px 0 var(--green), -391px 0 var(--green), -404px 0 var(--green), -417px 0 var(--green), -430px 0 var(--green), -443px 0 var(--green), -456px 0 var(--green), -469px 0 var(--green), -482px 0 var(--green), -496px 0 var(--green), -509px 0 var(--green), -522px 0 var(--green), -535px 0 var(--green), -548px 0 var(--green), -561px 0 var(--green) 
 }
 
+
+.TrackRewind::-webkit-slider-thumb:hover {
+    background-color: var(--lightgray);
+      cursor: pointer;
+      width:15px;
+      height: 25px;
+      -webkit-appearance: none;
+
+}
