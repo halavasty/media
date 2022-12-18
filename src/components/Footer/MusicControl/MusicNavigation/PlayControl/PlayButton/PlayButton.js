@@ -6,9 +6,9 @@ export const PlayButton = ({MusicData}) => {
   
     const [isActive, setActive] = useState(false);
     
-  
     const toggleActive = () => {
         setActive(!isActive);
+        
         if (!isActive) {
             console.log("Play");
             MusicData("Play");

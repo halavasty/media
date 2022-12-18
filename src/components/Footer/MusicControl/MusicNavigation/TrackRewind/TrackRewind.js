@@ -4,19 +4,17 @@ import { TrackDurationTime} from "./TrackDurationTime"
 
 
 
-export const TrackRewind = ({timeUpdate, timeduration, userDuration}) => {
+export const TrackRewind = ({timeUpdate, timeduration, rewindData}) => {
   
-
-const rewindTrack = function(e) {
-  const value = 123;
-  userDuration(value);
-  console.log(e.target.value)
-}
-
+  
+    const Rewind = () => {
+      rewindData(123);
+    }
+ 
     return (
       <div className="TrackRewind-container">
         <TrackCurrentTime timeUpdate={timeUpdate} />
-        <input className="TrackRewind" type="range" min="0" max={timeduration} name="range" value={timeUpdate} step="1" onClick={rewindTrack}>
+        <input className="TrackRewind" type="range" min="0" max={timeduration} name="range" value={timeUpdate} step="1" onClick={Rewind}>
         </input>
         <TrackDurationTime timeduration={timeduration} />
       

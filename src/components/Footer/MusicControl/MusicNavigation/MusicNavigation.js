@@ -3,42 +3,36 @@ import { MixButton } from "./MixButton";
 import { RepeatButton } from './RepeatButton'
 import { PlayControl } from "./PlayControl";
 import { TrackRewind } from "./TrackRewind";
+import { Audio } from "./Audio";
 import { useState } from "react";
 
-export const MusicNavigation = (props) => {
+export const MusicNavigation = (trackData) => {
     
-  const MusicData = (MusicInfo) => {
-    const audio = document.querySelector('#audio');
-    if(MusicInfo === "Play") {
-      audio.play();
-    }
 
-    if(MusicInfo === "Stop-play") {
-      audio.pause();
-    }
-  };
+
+ const [isPlaying, setPlaying] = useState("Stop-play");
+
+ const MusicData = (MusicInfo) => {
+  if(MusicInfo === "Stop-play") {
+    setPlaying("Audio-Stop");
+  }
+  if (MusicInfo === "Play") {
+    setPlaying("Audio-Play");
+  }
+};
 
   // Audio
   const [timeUpdate, setTimeUpdate] = useState('0')
-
+  const [timeDuration, setTimeDuration] = useState('0')
+    
     const changeTime = (e) => {
         setTimeUpdate((e.target.currentTime));
     }
     
-    const [timeDuration, setTimeDuration] = useState('0')
-
     const changeDuration = (e) => {
         setTimeDuration((e.target.duration))
     }
 
-    //RewindTrack
-
-    const userDuration = (rewind) => {
-      const audio = document.querySelector('#audio');
-      if(rewind) {
-        audio.currentTime = rewind;
-      }
-    };
 
     return (
       <div className="MusicNavigation">
@@ -48,13 +42,9 @@ export const MusicNavigation = (props) => {
         <RepeatButton />
         </div>
         <div className="MusicNavigation-rewind">
-        <TrackRewind timeUpdate={timeUpdate} timeduration={timeDuration} userDuration={userDuration} />
+        <TrackRewind timeUpdate={timeUpdate} timeduration={timeDuration} />
         </div>
-        
-        <audio id="audio" onTimeUpdateCapture={changeTime} onTimeUpdate={changeDuration}>
-        <source src={props.src} type={props.type}></source>
-        
-        </audio>
+        <Audio src={trackData.src} type={trackData.type} changeDuration={changeDuration} changeTime={changeTime} isPlaying={isPlaying} />
       </div>
   );
 };
