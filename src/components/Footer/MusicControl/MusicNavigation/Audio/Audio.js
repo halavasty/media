@@ -11,6 +11,8 @@ export const Audio = ({changeDuration, changeTime, type, isPlaying, src}) => {
         audio.play();
     }
 
+
+
     return (
         <audio id="audio" onTimeUpdateCapture={changeTime} onTimeUpdate={changeDuration}>
         <source src={src} type={type}></source>

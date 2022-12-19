@@ -2,6 +2,8 @@ import "./Footer.scss";
 import { MusicControl } from "./MusicControl";
 import { TrackInfo } from "./TrackInfo";
 import Summer from "./TrackInfo/Summer.png"
+import TestTrack from "../../helpers/assets/TestMusic/Michael Jackson- Lil Nas X - Jack Harlow-Industry Baby -Beat It--textmp3.ru.mp3"
+import TestTrack2 from "../../helpers/assets/TestMusic/Konfuz - Кайф Ты Поймала.mp3"
 
 export const Footer = (props) => {
   
@@ -9,7 +11,7 @@ export const Footer = (props) => {
     console.log(likeInfo);
   };
 
-  const src = "https://mp3minusovki.com/music/fhvndfjwserjgt/247bab1c312b2335afe3f5c9b496a3d3/854262e8b9de720784c0a4491e49912f.mp3";
+  const src = TestTrack;
   const type = "audio/mp3"
 
     return (

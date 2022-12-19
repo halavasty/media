@@ -4,7 +4,7 @@ import { RepeatButton } from './RepeatButton'
 import { PlayControl } from "./PlayControl";
 import { TrackRewind } from "./TrackRewind";
 import { Audio } from "./Audio";
-import { useState } from "react";
+import { useState} from "react";
 
 export const MusicNavigation = (trackData) => {
     
@@ -33,6 +33,10 @@ export const MusicNavigation = (trackData) => {
         setTimeDuration((e.target.duration))
     }
 
+    const rewindData = (userRewind) => {
+      const audio = document.querySelector('#audio');
+      audio.currentTime = userRewind;
+    }
 
     return (
       <div className="MusicNavigation">
@@ -42,7 +46,7 @@ export const MusicNavigation = (trackData) => {
         <RepeatButton />
         </div>
         <div className="MusicNavigation-rewind">
-        <TrackRewind timeUpdate={timeUpdate} timeduration={timeDuration} />
+        <TrackRewind timeUpdate={timeUpdate} timeduration={timeDuration} rewindData={rewindData} />
         </div>
         <Audio src={trackData.src} type={trackData.type} changeDuration={changeDuration} changeTime={changeTime} isPlaying={isPlaying} />
       </div>
