@@ -2,8 +2,7 @@ import "./Footer.scss";
 import { MusicControl } from "./MusicControl";
 import { TrackInfo } from "./TrackInfo";
 import Summer from "./TrackInfo/Summer.png"
-import TestTrack from "../../helpers/assets/TestMusic/Michael Jackson- Lil Nas X - Jack Harlow-Industry Baby -Beat It--textmp3.ru.mp3"
-import TestTrack2 from "../../helpers/assets/TestMusic/Konfuz - Кайф Ты Поймала.mp3"
+import TestTrack from "../../helpers/assets/TestMusic/TestTrack.mp3"
 
 export const Footer = (props) => {
   

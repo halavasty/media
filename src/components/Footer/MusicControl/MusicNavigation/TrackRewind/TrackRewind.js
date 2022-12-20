@@ -9,7 +9,7 @@ export const TrackRewind = ({timeUpdate, timeduration, rewindData}) => {
   const progressValue = (timeUpdate / timeduration ) * 100
     
     const Rewind = (e) => {
-      const userClickPostion = (e.nativeEvent.offsetX * 80) / (timeduration ) 
+      const userClickPostion = (e.nativeEvent.offsetX * timeduration ) / 565
       rewindData(userClickPostion);
     }
  
