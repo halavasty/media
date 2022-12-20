@@ -1,0 +1,12 @@
+.PlayButton-Icon {
+    width: 36.5px;
+    height: 36.5px;
+    fill: var(--middlegray);
+    position: absolute;
+    top: -0.5px;
+    left: -0.4px;
+  }
+  
+.PlayButton-Icon:hover {
+    fill: var(--green);
+  }

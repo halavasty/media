@@ -1,0 +1,8 @@
+.RepeatButton-Icon {
+    width: 19px;
+    height: 17.22px;
+  }
+  
+.RepeatButton-Icon:hover {
+    stroke: var(--green);
+  }
