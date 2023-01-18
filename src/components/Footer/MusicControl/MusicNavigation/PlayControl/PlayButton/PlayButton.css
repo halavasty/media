@@ -1,0 +1,47 @@
+.PlayButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    width: 35.8px;
+    height: 35.6px;
+}
+
+.PlayButton.active {
+    width: 35.8px;
+    height: 35.6px;
+    background-color: var(--middlegray);
+    border-radius: 50%;
+}
+
+.PlayButton.active::before {
+    content: "";
+    height: 20px;
+    width: 4px;
+    background-color: var(--black);
+    position: absolute;
+    left: 33%;
+    transform: translateX(-33%);
+    top: 8px;
+}
+
+.PlayButton.active::after {
+    content: "";
+    height: 20px;
+    width: 4px;
+    background-color: var(--black);
+    position: absolute;
+    right: 26%;
+    transform: translateX(-26%);
+    top: 8px;
+}
+
+.PlayButton.PlayButton.active:hover {
+    background-color: var(--green);
+}
+
+
+
+.PlayButton.active .PlayButton-Icon {
+    display: none;
+}

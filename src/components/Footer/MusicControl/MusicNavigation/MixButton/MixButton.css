@@ -1,0 +1,12 @@
+.MixButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 29.5px;
+}
+
+.MixButton.active .MixButton-Icon {
+    fill: var(--green);
+    stroke: var(--green);
+    
+}

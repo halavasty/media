@@ -1,0 +1,11 @@
+.RepeatButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 33px;
+}
+
+.RepeatButton.active .RepeatButton-Icon {
+    stroke: var(--green);
+    
+}
