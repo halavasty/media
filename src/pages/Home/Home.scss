@@ -7,6 +7,16 @@
   grid-template-columns: 0.8fr 3fr 3fr;
   grid-template-areas:
     'menu header header header'
-    'menu header header header' 
+    'menu play play play'
+    'menu play play play'
+    'menu play play play' 
     'footer footer footer footer';
+}
+
+.WrapperPH{
+  height: calc(100vh - 120px);
+  overflow: scroll;
+  width: auto;
+  grid-area: play;
+
 }
